@@ -1,10 +1,12 @@
 import React from "react";
-import Register from "./Register";
+import {Navbar, Register} from "./";
+
 
 const Main = () => {
     return (
         <div id='Main'>
-        <h1>Hello World!</h1>
+        <Navbar /> 
+        <br/>
         <Register />
         </div>
     )
