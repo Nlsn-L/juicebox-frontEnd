@@ -1,9 +1,10 @@
 import React from "react";
 import { RegisterUser } from "../api";
 
-const Register = (e) => {
+const Register = (props) => {
     e.preventDefault()
 
+    async function handleRegister(e){
     const username = e.target[0].value
     const password = e.target[1].value
     const confirmPassword = e.target[2].value
@@ -18,10 +19,24 @@ const Register = (e) => {
     }else{
         alert('Passwords do not match')
     }
-
+    }
 
 return (
-    <h1>Register</h1>
+    <div className="box">
+    <form onSubmit={handleSubmit}>
+        <label htmlFor="username">Username: </label>
+        <input id="username" type='text' required />
+        <label htmlFor="password">Password: </label>
+        <input id="password" type='password' required />
+        <label htmlFor="Confirm password">Confirm Password: </label>
+        <input id="Confirm password" type='password' required />
+        <label htmlFor="name">Name:</label>
+        <input id="name" type='text' required />
+        <label htmlFor="location">Location: </label>
+        <input id="location" type="text">
+        <button type="submit"> Submit </button>
+    </form>
+</div>
 )
 
 
