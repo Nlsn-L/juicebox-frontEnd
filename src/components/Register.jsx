@@ -2,9 +2,11 @@ import React from "react";
 import { RegisterUser } from "../api";
 
 const Register = (props) => {
-    e.preventDefault()
+    
 
     async function handleRegister(e){
+     e.preventDefault()
+
     const username = e.target[0].value
     const password = e.target[1].value
     const confirmPassword = e.target[2].value
@@ -23,7 +25,7 @@ const Register = (props) => {
 
 return (
     <div className="box">
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleRegister}>
         <label htmlFor="username">Username: </label>
         <input id="username" type='text' required />
         <label htmlFor="password">Password: </label>
@@ -33,7 +35,7 @@ return (
         <label htmlFor="name">Name:</label>
         <input id="name" type='text' required />
         <label htmlFor="location">Location: </label>
-        <input id="location" type="text">
+        <input id="location" type="text" />
         <button type="submit"> Submit </button>
     </form>
 </div>
