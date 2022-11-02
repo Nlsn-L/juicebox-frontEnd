@@ -10,8 +10,8 @@ const LogInOut = () => {
             event.preventDefault();
             const username = event.target[0].value;
             const password = event.target[1].value;
-            const registeredUser = await loginUser(username,password)
-            const token = registeredUser.token;
+            const token = await loginUser(username,password)
+            
             localStorage.removeItem("token");
             localStorage.setItem("token", token);
         } catch (error) {
@@ -26,6 +26,9 @@ const LogInOut = () => {
         <input id="username" type="text" required />
         <label>Password:</label>
         <input id="password" type="text" />
+        <button className="submitBtn" type="submit">
+            Submit
+        </button>
       </form>
     </div>
   );
