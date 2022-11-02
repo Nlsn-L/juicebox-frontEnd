@@ -23,3 +23,26 @@ export async function RegisterUser(username,password,name,location){
 
 
 }
+
+export async function loginUser(username, password) {
+    try {
+      const loginResult = await fetch(`${BASE_URL}users/login`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            user: {
+              username,
+              password,
+            },
+          }),
+        }
+      );
+      const resp = await loginResult.json();
+      return resp.data;
+    } catch (error) {
+      console.log(error);
+    }
+  }
