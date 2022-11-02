@@ -14,9 +14,9 @@ const Register = (props) => {
     const location = e.target[4].value
 
     if (password === confirmPassword){
-        const registeredUser = await RegisterUser(username,password,name,location)
-        const token = registeredUser.token
+        const token = await RegisterUser(username,password,name,location)
         console.log(token)
+       // const token = registeredUser.token
         localStorage.removeItem(token)
         localStorage.setItem('token',token)
     }else{
