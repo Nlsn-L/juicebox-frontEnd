@@ -1,6 +1,6 @@
 import React from "react";
 import { loginUser } from "../api";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const LogInOut = () => {
   const navigate = useNavigate();
@@ -20,16 +20,22 @@ const LogInOut = () => {
     }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <label>Username:</label>
-        <input id="username" type="text" required />
-        <label>Password:</label>
-        <input id="password" type="text" />
-        <button className="submitBtn" type="submit">
-            Submit
-        </button>
+    <div className="loginForm">
+      <h2>Log in</h2>
+      <form className="loginInput" onSubmit={handleSubmit}>
+        <div className="userBox">
+        <label id="username">Username</label>
+        <input id="userInput" type="text" required />
+        </div>
+        <div className="passBox">
+          <label id="password">Password</label>
+        <input id="userInput" type="password" />
+        </div>
+          <button className="submitBtn" type="submit">
+            Login
+        </button>  
       </form>
+      <Link className="signBtn" to={'/register'}>or Sign up</Link>
     </div>
   );
 };

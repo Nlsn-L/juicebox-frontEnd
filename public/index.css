@@ -2,6 +2,10 @@
     margin: 0;
 }
 
+body {
+    background: linear-gradient(white, grey);
+}
+
 #Navbar{
     padding: 10px;
     display: flex;
@@ -10,4 +14,77 @@
     justify-content: space-between;
     background-color: cornflowerblue;
     color: white;
+}
+
+.Login-Register{
+    height: 859px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.loginForm{
+    /* height: 250px; */
+    width: 350px;
+    padding: 20px;
+    background-color: cornflowerblue;
+    color: white;
+    box-shadow: 0 0 12px black;
+    border-radius: 20px;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.loginInput{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.userBox{
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#username{
+    font-size: larger;
+    padding-bottom: 3px;
+}
+
+.passBox{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#password{
+    font-size: larger;
+    padding-top: 5px;
+    padding-bottom:3px ;
+}
+
+#userInput{
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.submitBtn{
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.signBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.signBtn:hover{
+    
 }
