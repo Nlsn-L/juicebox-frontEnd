@@ -14,6 +14,24 @@ const Register = (props) => {
         const name = e.target[3].value;
         const location = e.target[4].value;
     
+
+    async function handleRegister(e){
+     e.preventDefault()
+
+    const username = e.target[0].value
+    const password = e.target[1].value
+    const confirmPassword = e.target[2].value
+    const name = e.target[3].value
+    const location = e.target[4].value
+
+    if (password === confirmPassword){
+        const token = await RegisterUser(username,password,name,location)
+        console.log(token)
+       // const token = registeredUser.token
+        localStorage.removeItem(token)
+        localStorage.setItem('token',token)
+    }else{
+        alert('Passwords do not match')
         if (password === confirmPassword) {
           const token = await RegisterUser(
             username,
