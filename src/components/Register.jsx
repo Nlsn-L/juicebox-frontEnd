@@ -32,24 +32,24 @@ const Register = (props) => {
       <h2>Register</h2>
       <form className="dataInput" onSubmit={handleRegister}>
         <div className="userBox">
-          <label id="userData">Username: </label>
-          <input id="userInput" type="text" required />
+          <label className="userData">Username: </label>
+          <input className="userInput" type="text" required />
         </div>
         <div className="passBox">
-          <label id="userData">Password: </label>
-          <input id="userInput" type="password" required />
+          <label className="userData">Password: </label>
+          <input className="userInput" type="password" required />
         </div>
         <div className="confirmBox">
-          <label id="userData">Confirm Password: </label>
-          <input id="userInput" type="password" required />
+          <label className="userData">Confirm Password: </label>
+          <input className="userInput" type="password" required />
         </div>
         <div className="nameBox">
-          <label id="userData">Name:</label>
-          <input id="userInput" type="text" required />
+          <label className="userData">Name:</label>
+          <input className="userInput" type="text" required />
         </div>
         <div className="locationBox">
-          <label id="userData">Location: </label>
-          <input id="userInput" type="text" />
+          <label className="userData">Location: </label>
+          <input className="userInput" type="text" />
         </div>
         <button className="submitBtn" type="submit">
           Register
