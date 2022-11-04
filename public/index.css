@@ -57,7 +57,7 @@ body {
     justify-content:center;
 }
 
-.loginForm{
+.box{
     /* height: 250px; */
     width: 350px;
     padding: 20px;
@@ -70,7 +70,7 @@ body {
     flex-direction: column;
 }
 
-.loginInput{
+.dataInput{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -82,7 +82,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-#username{
+#userData{
     font-size: larger;
     padding-bottom: 3px;
 }
@@ -92,16 +92,29 @@ body {
     display: flex;
     flex-direction: column;
 }
-#password{
-    font-size: larger;
-    padding-top: 5px;
-    padding-bottom:3px ;
-}
 
 #userInput{
     padding: 10px;
     font-weight: bold;
     border-radius: 3px;
+}
+
+.confirmBox{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nameBox{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.locationBox{
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .submitBtn{
