@@ -1,5 +1,5 @@
 import React from "react";
-import {Navbar, Register} from "./";
+import {Navbar, Register, Posts} from "./";
 import {
     createBrowserRouter,
     createRoutesFromElements,
