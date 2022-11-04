@@ -14,6 +14,7 @@ const LogInOut = () => {
 
       localStorage.removeItem("token");
       localStorage.setItem("token", token);
+      navigate("/posts")
     } catch (error) {
       console.log(error);
     }
