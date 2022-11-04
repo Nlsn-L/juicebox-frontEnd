@@ -20,6 +20,7 @@ const Register = (props) => {
         console.log(token, "this is token");
         localStorage.removeItem("token");
         localStorage.setItem("token", token);
+        // navigate("/login")
       } else {
         alert("Passwords do not match");
       }
