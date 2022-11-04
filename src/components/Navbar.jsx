@@ -14,9 +14,9 @@ const Navbar = () => {
                     alt="menu"/>
             </div>
             <div className="dropdown-text">
-            <a><Link to={'/register'}>Register</Link></a>
-            <a><Link to={'/login'}>Login</Link></a>
-            <a><Link>Post</Link></a>
+            <p><Link to={'/register'}>Register</Link></p>
+            <p><Link to={'/login'}>Login</Link></p>
+            <p><Link>Post</Link></p>
             </div>
         </div>
         </div>
