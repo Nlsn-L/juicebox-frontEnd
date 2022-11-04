@@ -16,15 +16,13 @@ const Main = () => {
             <Route path="/" element={<Navbar/>}>
                 <Route path="/register" element={<Register/>}/>
                 <Route path="/login" element={<LogInOut/>}/>
+                <Route path="/posts" element={<Posts/>}/>
             </Route>
         )
     )
 
     return (
         <div id='Main'>
-        {/* <Navbar /> 
-        <br/>
-        <Register /> */}
         <RouterProvider router={router}></RouterProvider>
         </div>
     )
